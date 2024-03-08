@@ -1,4 +1,4 @@
-# Celestial
+# RosterPulse
 
 RosterPulse - Attendance Management System with Image Capture
 
