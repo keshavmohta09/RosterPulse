@@ -224,6 +224,7 @@ class UpdateRosterUserScheduleAPI(APIView):
                                     ),
                                 }
                             ],
+                            created_by=request.user,
                         )
                     )
                     if not success:
