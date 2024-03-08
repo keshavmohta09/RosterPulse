@@ -100,7 +100,9 @@ class CreateRosterUserScheduleAPI(APIView):
 
         # Creating new roster user schedule
         success, roster_user_schedules = bulk_create_roster_user_schedules(
-            roster=validated_data.pop("roster"), data=[validated_data]
+            roster=validated_data.pop("roster"),
+            data=[validated_data],
+            created_by=request.user,
         )
         if not success:
             return CustomResponse(
